@@ -9,10 +9,10 @@ Se toma como referencia la api: https://superheroapi.com/  se configura un servi
 > npm start
 
 
-La aplicación se corre en el puerto 4200
+## La aplicación se corre en el puerto 4200
 > http://localhost:4200
 
-**Carpetas del proyecto**
+## Carpetas del proyecto
 - src 
   - app
   - components
