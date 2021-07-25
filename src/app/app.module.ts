@@ -9,9 +9,28 @@ import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 
 import { ROUTER } from './app.routes';
+import { AuthComponent } from './components/auth/auth.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { LoadingComponent } from './components/loading/loading.component';
+import { ErroresComponent } from './components/errores/errores.component';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { ResultComponent } from './components/result/result.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, SearchComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    SearchComponent,
+    HomeComponent,
+    AuthComponent,
+    PageNotFoundComponent,
+    TarjetaComponent,
+    LoadingComponent,
+    ErroresComponent,
+    NoimagePipe,
+    ResultComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,

@@ -1,0 +1,28 @@
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;" >
+        <img src="{{heroe | noimage}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-center">{{ heroe.name}}</h3>
+        </div>
+     </div>
+    </div>
+    <div class="col">
+      <h3>Biografía</h3>
+      <ul class="list-group list-group-flush">        
+        <li class="list-group-item">{{ heroe.connections.relatives }}</li>
+        <li class="list-group-item"><b>Bando:</b> {{ heroe.connections['group-affiliation'] }}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Puntuación</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>Combate:</b> {{ heroe.powerstats.combat }}</li>
+        <li class="list-group-item"><b>Durabilidad:</b> {{ heroe.powerstats.durability }}</li>
+        <li class="list-group-item"><b>Inteligencia:</b> {{ heroe.powerstats.intelligence }}</li>
+        <li class="list-group-item"><b>Poder:</b> {{ heroe.powerstats.power }}</li>
+        <li class="list-group-item"><b>Velocidad:</b> {{ heroe.powerstats.speed }}</li>
+        <li class="list-group-item"><b>Fuerza:</b> {{ heroe.powerstats.strength }}</li>
+      </ul>
+    </div>
+  </div>

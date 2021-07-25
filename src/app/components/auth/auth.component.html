@@ -1,0 +1,15 @@
+<app-errores *ngIf="error" [mensaje]="mensajeError" [activo]="error"></app-errores>
+
+<div class="card w-75">
+  <div class="card-body">
+    <h5 class="card-title">Autorización</h5>
+    <form>
+    <div class="form-group">
+        <label for="tokenText">Token</label>
+        <input #token type="text" class="form-control" id="tokenText" aria-describedby="tokenText">
+        <small id="emailHelp" class="form-text text-muted">Solicite el Token de acceso en <a target="_blank" href="https://superheroapi.com/">https://superheroapi.com/</a></small>
+    </div>
+    <button type="submit" (click)="login(token.value, $event)" class="btn btn-primary">Autorizar</button>
+    </form>
+  </div>
+</div>

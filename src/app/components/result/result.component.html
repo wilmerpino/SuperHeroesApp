@@ -1,0 +1,13 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<app-errores
+  *ngIf="error"
+  [mensaje]="mensajeError"
+  [activo]="error"
+></app-errores>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let heroe of heroes">
+    <app-tarjeta [heroe]="heroe"></app-tarjeta>
+  </li>
+</ul>
