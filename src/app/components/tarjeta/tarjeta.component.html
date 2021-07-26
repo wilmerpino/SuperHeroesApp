@@ -17,12 +17,12 @@
     <div class="col">
       <h3>Puntuación</h3>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><b>Combate:</b> {{ heroe.powerstats.combat }}</li>
-        <li class="list-group-item"><b>Durabilidad:</b> {{ heroe.powerstats.durability }}</li>
-        <li class="list-group-item"><b>Inteligencia:</b> {{ heroe.powerstats.intelligence }}</li>
-        <li class="list-group-item"><b>Poder:</b> {{ heroe.powerstats.power }}</li>
-        <li class="list-group-item"><b>Velocidad:</b> {{ heroe.powerstats.speed }}</li>
-        <li class="list-group-item"><b>Fuerza:</b> {{ heroe.powerstats.strength }}</li>
+        <li class="list-group-item"><b>Combate:</b> {{ heroe.powerstats.combat | puntaje }}</li>
+        <li class="list-group-item"><b>Durabilidad:</b> {{ heroe.powerstats.durability | puntaje}}</li>
+        <li class="list-group-item"><b>Inteligencia:</b> {{ heroe.powerstats.intelligence | puntaje}}</li>
+        <li class="list-group-item"><b>Poder:</b> {{ heroe.powerstats.power | puntaje}}</li>
+        <li class="list-group-item"><b>Velocidad:</b> {{ heroe.powerstats.speed | puntaje}}</li>
+        <li class="list-group-item"><b>Fuerza:</b> {{ heroe.powerstats.strength | puntaje}}</li>
       </ul>
     </div>
   </div>

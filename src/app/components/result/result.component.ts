@@ -22,7 +22,6 @@ export class ResultComponent {
   buscar(termino: string): void {
     if (termino.length > 0) {
       this.service.buscarHeroe(termino).subscribe((response: any) => {
-        console.log(response);
         if (response.response === 'success') {
           this.heroes = response.results;
           this.error = false;

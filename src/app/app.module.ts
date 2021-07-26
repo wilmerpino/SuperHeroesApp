@@ -16,6 +16,7 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { ErroresComponent } from './components/errores/errores.component';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { ResultComponent } from './components/result/result.component';
+import { PuntajePipe } from './pipes/puntaje.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ResultComponent } from './components/result/result.component';
     ErroresComponent,
     NoimagePipe,
     ResultComponent,
+    PuntajePipe,
   ],
   imports: [
     BrowserModule,

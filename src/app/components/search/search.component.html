@@ -1,4 +1,4 @@
 <form class="d-flex">
     <input  #termino  class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-info ml-2" type="submit" (click)="buscar(termino.value)">Buscar</button>
+    <button class="btn btn-outline-info ml-2" type="submit" (click)="buscar(termino.value, $event)">Buscar</button>
   </form>

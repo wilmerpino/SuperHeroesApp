@@ -13,7 +13,13 @@ export class SearchComponent {
 
   }
 
-  buscar(termino: string): void {
-    this.router.navigate(['result', termino]);
+  buscar(termino: string, $event: any): void {
+    $event.preventDefault();
+    if (termino.length > 0){
+        this.router.navigate(['result', termino]);
+    } 
+    else{
+      alert('Debe ingresar un criterio de búsqueda');
+    }
   }
 }

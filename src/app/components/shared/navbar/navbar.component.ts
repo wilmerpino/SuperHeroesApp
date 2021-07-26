@@ -12,7 +12,6 @@ export class NavbarComponent {
 
   constructor(public service: SuperheroeService, private router: Router) {
     this.service.autenticado().subscribe((authenticate) => {
-      console.log(authenticate);
       return (this.autenticado = authenticate);
     });
   }
