@@ -72,18 +72,18 @@ Para generar el _Contenedor Docker_ siga las siguientes instruccones
 Desde la carpta `SuperHeroesApp` ejecute la siguente secuencia de comandos
 
 Constuir la imagen
-> docker build -t heroe:0.0.1 . --no-cache=true
+> ddocker build -t superheroe:0.0.1 . --no-cache=true  
 
 Verificar la imagen creada
 > docker image ls
 
 Montar la imagen en un contededor Docker
-> docker container run -it -d -p 3000:3000 heroe:0.0.1
+>  docker container run -it -d -p 8080:8080 superheroe:0.0.1
 
 Varificar que el contenedor este ejectándose
 > docker container ls
 
-**La aplicación queda ejecutándose en la URL http://localhost:4200**
+**La aplicación queda ejecutándose en la URL http://localhost:8080**
 
 # Autor #
 Wilmer Pino
