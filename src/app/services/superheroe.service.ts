@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +18,8 @@ export class SuperheroeService {
 
   getQuery(endpoint: string): Observable<any> {
     const token = this.getToken();
-    const url = `api/${token}/${endpoint}`;
+   // const url = `api/${token}/${endpoint}`;
+   const url = environment.apiUrl + `/${token}/${endpoint}`;
 
     return this.http.get(url);
   }

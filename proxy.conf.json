@@ -1,8 +1,8 @@
 {
   "/api/*": {
     "target": "https://www.superheroapi.com",
-    "secure": true,         
-    "changeOrigin": true,  
+    "secure": true,
+    "changeOrigin": true,
     "logLevel": "debug"
   }
 }
