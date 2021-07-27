@@ -22,6 +22,9 @@ Se toma como referencia la api: https://superheroapi.com/  se configura un servi
 ## La aplicación se corre en el puerto 4200
 > http://localhost:4200
 
+## ¿Como utiliza la Aplicación? ##
+Al iniciar la aplicación por primera vez, ésta mostrará la 
+
 ## Carpetas del proyecto
 - src 
   - app
@@ -62,23 +65,25 @@ Se crearon los siguientes test unitarios
 ## Contenedor ##
 Se agrega archivo `Dockerfile` con la configuración de Docker para virtualizar el aplicativo
 
-Siga las siguientes instruccones para generar el _Contenedor Docker_
+**Para virtualizar la aplicación debe instalar [Docker](https://www.docker.com/) antes de continuar con las instrucciones**
+
+Para generar el _Contenedor Docker_ siga las siguientes instruccones
 
 Desde la carpta `SuperHeroesApp` ejecute la siguente secuencia de comandos
 
 Constuir la imagen
-> docker build -t heroe:0.0.1 . --no-cache=true
+> ddocker build -t superheroe:0.0.1 . --no-cache=true  
 
 Verificar la imagen creada
 > docker image ls
 
 Montar la imagen en un contededor Docker
-> docker container run -it -d -p 3000:3000 heroe:0.0.1
+>  docker container run -it -d -p 8080:8080 superheroe:0.0.1
 
 Varificar que el contenedor este ejectándose
 > docker container ls
 
-**La aplicación queda ejecutándose en la URL http://localhost:4200**
+**La aplicación queda ejecutándose en la URL http://localhost:8080**
 
 # Autor #
 Wilmer Pino
