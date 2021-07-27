@@ -3,10 +3,20 @@
 Sencilla aplicación Web que permite obtener información sobre super heroes.
 Se toma como referencia la api: https://superheroapi.com/  se configura un servidor proxy para evitar el problema por CORS.
 
-## Para instalar ejecute:
+## Instalación
+**Descargue el proyecto desde el repositorio**
+> git clone https://github.com/wilmerpino/SuperHeroesApp.git
+
+**Moverse a la carpeta PiCalc**
+> cd SuperHeroesApp
+
+**Descargar las dependencias con npm**
 > npm install
 
+**Ejecutar la aplicación en modo de desarrollo**
 > npm start
+
+**Nota: Debe tener instalado `node` y `npm`**
 
 
 ## La aplicación se corre en el puerto 4200
@@ -24,21 +34,55 @@ Se toma como referencia la api: https://superheroapi.com/  se configura un servi
    - result
    - search
    - shared
-     - navbar
+    - navbar
    - tarjeta       
    - pipes
    - services
 - envieroments
 - assets
 
-## Ejecutar los test unitarios
+## Ejecutar los test unitarios ##
+Se crearon los siguientes test unitarios
+- [ ] controllers
+- [ ] services
+- [x] pipes
+
+**Para ejecutar los test escriba el siguiente comando**
 
 > ng test
 
-## Tecnogías utilizadas
+## Tecnogías utilizadas ##
 
 - [x] Angular 12
 - [x] Typescript
 - [x] Proxy
 - [x] Karma
+- [x] Docker
 
+## Contenedor ##
+Se agrega archivo `Dockerfile` con la configuración de Docker para virtualizar el aplicativo
+
+Siga las siguientes instruccones para generar el _Contenedor Docker_
+
+Desde la carpta `SuperHeroesApp` ejecute la siguente secuencia de comandos
+
+Constuir la imagen
+> docker build -t heroe:0.0.1 . --no-cache=true
+
+Verificar la imagen creada
+> docker image ls
+
+Montar la imagen en un contededor Docker
+> docker container run -it -d -p 3000:3000 heroe:0.0.1
+
+Varificar que el contenedor este ejectándose
+> docker container ls
+
+**La aplicación queda ejecutándose en la URL http://localhost:4200**
+
+# Autor #
+Wilmer Pino
+
+wilmerpino@gmail.com
+
+https://www.linkedin.com/in/wilmerpino/
