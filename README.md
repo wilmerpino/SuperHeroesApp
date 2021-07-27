@@ -65,6 +65,8 @@ Se crearon los siguientes test unitarios
 ## Contenedor ##
 Se agrega archivo `Dockerfile` con la configuración de Docker para virtualizar el aplicativo
 
+`NOTA: Se logró crear el contenedor, pero no se pudo habilitar para evitar rechazos del servidor por solicitudes de CORS`
+
 **Para virtualizar la aplicación debe instalar [Docker](https://www.docker.com/) antes de continuar con las instrucciones**
 
 Para generar el _Contenedor Docker_ siga las siguientes instruccones
